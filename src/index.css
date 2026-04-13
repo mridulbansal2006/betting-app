@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --color-stake-bg: #0f1923;
+  --color-stake-card: #1a2c38;
+  --color-stake-hover: #213743;
+  --color-stake-input: #0d1b26;
+  --color-stake-border: #2f4553;
+  --color-stake-green: #00e701;
+  --color-stake-blue: #1475e1;
+  --color-stake-yellow: #f5a623;
+  --color-stake-red: #ed4163;
+  --color-stake-purple: #8b5cf6;
+  --color-stake-textPrimary: #ffffff;
+  --color-stake-textSecondary: #b1bad3;
+  --color-stake-textMuted: #557086;
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  background: #0f1923;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top right, rgba(0, 231, 1, 0.08), transparent 20%),
+    radial-gradient(circle at left center, rgba(20, 117, 225, 0.08), transparent 18%),
+    #0f1923;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d1b26;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2f4553;
+  border-radius: 999px;
+}

@@ -1,0 +1,1034 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "Mridul Sharma",
+      "email": "mridul@stakezone.com",
+      "password": "hashed_password_123",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=mridul",
+      "balance": 9900,
+      "totalBets": 48,
+      "totalWins": 28,
+      "totalLosses": 19,
+      "profit": 4250,
+      "winStreak": 3,
+      "favoriteSport": "cricket",
+      "joinedAt": "2026-03-01T10:00:00Z",
+      "lastBonusClaimed": "2026-04-12T08:00:00Z"
+    },
+    {
+      "id": "u2",
+      "name": "Lakshay Verma",
+      "email": "lakshay@stakezone.com",
+      "password": "hashed_password_456",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=lakshay",
+      "balance": 15600,
+      "totalBets": 62,
+      "totalWins": 41,
+      "totalLosses": 21,
+      "profit": 8200,
+      "winStreak": 5,
+      "favoriteSport": "football",
+      "joinedAt": "2026-03-01T10:00:00Z",
+      "lastBonusClaimed": "2026-04-13T09:00:00Z"
+    },
+    {
+      "id": "u3",
+      "name": "Aryan Patel",
+      "email": "aryan@stakezone.com",
+      "password": "hashed_pw",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=aryan",
+      "balance": 3200,
+      "totalBets": 35,
+      "totalWins": 14,
+      "totalLosses": 21,
+      "profit": -2800,
+      "winStreak": 0,
+      "favoriteSport": "tennis",
+      "joinedAt": "2026-03-05T10:00:00Z",
+      "lastBonusClaimed": "2026-04-11T08:00:00Z"
+    },
+    {
+      "id": "u4",
+      "name": "Priya Singh",
+      "email": "priya@stakezone.com",
+      "password": "hashed_pw",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=priya",
+      "balance": 22400,
+      "totalBets": 89,
+      "totalWins": 58,
+      "totalLosses": 31,
+      "profit": 12400,
+      "winStreak": 7,
+      "favoriteSport": "cricket",
+      "joinedAt": "2026-02-20T10:00:00Z",
+      "lastBonusClaimed": "2026-04-13T07:00:00Z"
+    },
+    {
+      "id": "u5",
+      "name": "Rahul Kumar",
+      "email": "rahul@stakezone.com",
+      "password": "hashed_pw",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=rahul",
+      "balance": 7800,
+      "totalBets": 55,
+      "totalWins": 30,
+      "totalLosses": 25,
+      "profit": 1800,
+      "winStreak": 2,
+      "favoriteSport": "football",
+      "joinedAt": "2026-03-10T10:00:00Z",
+      "lastBonusClaimed": "2026-04-12T18:00:00Z"
+    }
+  ],
+  "matches": [
+    {
+      "id": "m1",
+      "sport": "cricket",
+      "league": "IPL 2026",
+      "leagueIcon": "🏏",
+      "status": "live",
+      "startTime": "2026-04-13T14:00:00Z",
+      "homeTeam": {
+        "name": "Mumbai Indians",
+        "shortName": "MI",
+        "logo": "/team-logos/mi.png",
+        "color": "#004BA0",
+        "score": "168/4",
+        "scoreDetail": "18.2 overs"
+      },
+      "awayTeam": {
+        "name": "Chennai Super Kings",
+        "shortName": "CSK",
+        "logo": "/team-logos/csk.png",
+        "color": "#FCCA06",
+        "score": null,
+        "scoreDetail": "Yet to bat"
+      },
+      "venue": "Wankhede Stadium, Mumbai",
+      "odds": {
+        "home": 1.85,
+        "draw": null,
+        "away": 2.1
+      },
+      "markets": [
+        {
+          "id": "mk1",
+          "name": "Match Winner",
+          "options": [
+            {
+              "label": "Mumbai Indians",
+              "odds": 1.85
+            },
+            {
+              "label": "Chennai Super Kings",
+              "odds": 2.1
+            }
+          ]
+        },
+        {
+          "id": "mk2",
+          "name": "Total Runs (Over/Under 320.5)",
+          "options": [
+            {
+              "label": "Over 320.5",
+              "odds": 1.9
+            },
+            {
+              "label": "Under 320.5",
+              "odds": 1.95
+            }
+          ]
+        },
+        {
+          "id": "mk3",
+          "name": "Top Batsman",
+          "options": [
+            {
+              "label": "Rohit Sharma",
+              "odds": 4.5
+            },
+            {
+              "label": "Suryakumar Yadav",
+              "odds": 3.8
+            },
+            {
+              "label": "Ruturaj Gaikwad",
+              "odds": 4.2
+            },
+            {
+              "label": "MS Dhoni",
+              "odds": 6
+            }
+          ]
+        }
+      ],
+      "commentary": [
+        {
+          "over": "18.2",
+          "text": "Bumrah bowls full, driven through covers for FOUR!",
+          "type": "boundary"
+        },
+        {
+          "over": "18.1",
+          "text": "Short ball, pulled to deep midwicket. Single taken.",
+          "type": "normal"
+        },
+        {
+          "over": "17.6",
+          "text": "WICKET! Caught at long-on. SKY departs for 62.",
+          "type": "wicket"
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "sport": "cricket",
+      "league": "IPL 2026",
+      "leagueIcon": "🏏",
+      "status": "upcoming",
+      "startTime": "2026-04-14T19:30:00Z",
+      "homeTeam": {
+        "name": "Royal Challengers Bengaluru",
+        "shortName": "RCB",
+        "logo": "/team-logos/rcb.png",
+        "color": "#EC1C24",
+        "score": null,
+        "scoreDetail": null
+      },
+      "awayTeam": {
+        "name": "Kolkata Knight Riders",
+        "shortName": "KKR",
+        "logo": "/team-logos/kkr.png",
+        "color": "#3A225D",
+        "score": null,
+        "scoreDetail": null
+      },
+      "venue": "M. Chinnaswamy Stadium, Bengaluru",
+      "odds": {
+        "home": 2.2,
+        "draw": null,
+        "away": 1.75
+      },
+      "markets": [
+        {
+          "id": "mk4",
+          "name": "Match Winner",
+          "options": [
+            {
+              "label": "RCB",
+              "odds": 2.2
+            },
+            {
+              "label": "KKR",
+              "odds": 1.75
+            }
+          ]
+        },
+        {
+          "id": "mk5",
+          "name": "Toss Winner",
+          "options": [
+            {
+              "label": "RCB",
+              "odds": 1.9
+            },
+            {
+              "label": "KKR",
+              "odds": 1.9
+            }
+          ]
+        }
+      ],
+      "commentary": []
+    },
+    {
+      "id": "m3",
+      "sport": "cricket",
+      "league": "IPL 2026",
+      "leagueIcon": "🏏",
+      "status": "completed",
+      "startTime": "2026-04-12T14:00:00Z",
+      "homeTeam": {
+        "name": "Delhi Capitals",
+        "shortName": "DC",
+        "logo": "/team-logos/dc.png",
+        "color": "#17479E",
+        "score": "185/6",
+        "scoreDetail": "20 overs"
+      },
+      "awayTeam": {
+        "name": "Rajasthan Royals",
+        "shortName": "RR",
+        "logo": "/team-logos/rr.png",
+        "color": "#EA1A85",
+        "score": "189/4",
+        "scoreDetail": "19.2 overs"
+      },
+      "venue": "Arun Jaitley Stadium, Delhi",
+      "result": "Rajasthan Royals won by 6 wickets",
+      "odds": {
+        "home": 1.95,
+        "draw": null,
+        "away": 1.9
+      },
+      "markets": [],
+      "commentary": []
+    },
+    {
+      "id": "m4",
+      "sport": "football",
+      "league": "Premier League",
+      "leagueIcon": "⚽",
+      "status": "live",
+      "startTime": "2026-04-13T17:00:00Z",
+      "minute": 67,
+      "homeTeam": {
+        "name": "Arsenal",
+        "shortName": "ARS",
+        "logo": "/team-logos/arsenal.png",
+        "color": "#EF0107",
+        "score": "2",
+        "scoreDetail": null
+      },
+      "awayTeam": {
+        "name": "Liverpool",
+        "shortName": "LIV",
+        "logo": "/team-logos/liverpool.png",
+        "color": "#C8102E",
+        "score": "1",
+        "scoreDetail": null
+      },
+      "venue": "Emirates Stadium, London",
+      "odds": {
+        "home": 1.65,
+        "draw": 3.8,
+        "away": 4.5
+      },
+      "markets": [
+        {
+          "id": "mk6",
+          "name": "Match Result (1X2)",
+          "options": [
+            {
+              "label": "Arsenal",
+              "odds": 1.65
+            },
+            {
+              "label": "Draw",
+              "odds": 3.8
+            },
+            {
+              "label": "Liverpool",
+              "odds": 4.5
+            }
+          ]
+        },
+        {
+          "id": "mk7",
+          "name": "Over/Under 2.5 Goals",
+          "options": [
+            {
+              "label": "Over 2.5",
+              "odds": 1.4
+            },
+            {
+              "label": "Under 2.5",
+              "odds": 2.9
+            }
+          ]
+        },
+        {
+          "id": "mk8",
+          "name": "Both Teams to Score",
+          "options": [
+            {
+              "label": "Yes",
+              "odds": 1.55
+            },
+            {
+              "label": "No",
+              "odds": 2.4
+            }
+          ]
+        },
+        {
+          "id": "mk9",
+          "name": "Next Goal",
+          "options": [
+            {
+              "label": "Arsenal",
+              "odds": 1.7
+            },
+            {
+              "label": "Liverpool",
+              "odds": 2.8
+            },
+            {
+              "label": "No Goal",
+              "odds": 5.5
+            }
+          ]
+        }
+      ],
+      "events": [
+        {
+          "minute": 12,
+          "type": "goal",
+          "team": "home",
+          "player": "Saka",
+          "detail": "Assisted by Ødegaard"
+        },
+        {
+          "minute": 34,
+          "type": "goal",
+          "team": "away",
+          "player": "Salah",
+          "detail": "Penalty"
+        },
+        {
+          "minute": 58,
+          "type": "goal",
+          "team": "home",
+          "player": "Havertz",
+          "detail": "Header from corner"
+        },
+        {
+          "minute": 45,
+          "type": "yellow_card",
+          "team": "away",
+          "player": "Van Dijk"
+        }
+      ],
+      "commentary": []
+    },
+    {
+      "id": "m5",
+      "sport": "football",
+      "league": "La Liga",
+      "leagueIcon": "⚽",
+      "status": "upcoming",
+      "startTime": "2026-04-14T20:00:00Z",
+      "homeTeam": {
+        "name": "Real Madrid",
+        "shortName": "RMA",
+        "logo": "/team-logos/realmadrid.png",
+        "color": "#FEBE10",
+        "score": null,
+        "scoreDetail": null
+      },
+      "awayTeam": {
+        "name": "Barcelona",
+        "shortName": "BAR",
+        "logo": "/team-logos/barcelona.png",
+        "color": "#A50044",
+        "score": null,
+        "scoreDetail": null
+      },
+      "venue": "Santiago Bernabéu, Madrid",
+      "odds": {
+        "home": 2.4,
+        "draw": 3.3,
+        "away": 2.8
+      },
+      "markets": [
+        {
+          "id": "mk10",
+          "name": "Match Result (1X2)",
+          "options": [
+            {
+              "label": "Real Madrid",
+              "odds": 2.4
+            },
+            {
+              "label": "Draw",
+              "odds": 3.3
+            },
+            {
+              "label": "Barcelona",
+              "odds": 2.8
+            }
+          ]
+        },
+        {
+          "id": "mk11",
+          "name": "Over/Under 3.5 Goals",
+          "options": [
+            {
+              "label": "Over 3.5",
+              "odds": 2.1
+            },
+            {
+              "label": "Under 3.5",
+              "odds": 1.75
+            }
+          ]
+        },
+        {
+          "id": "mk12",
+          "name": "First Goal Scorer",
+          "options": [
+            {
+              "label": "Mbappé",
+              "odds": 3.5
+            },
+            {
+              "label": "Vinícius Jr",
+              "odds": 4
+            },
+            {
+              "label": "Lewandowski",
+              "odds": 3.8
+            },
+            {
+              "label": "Lamine Yamal",
+              "odds": 5.5
+            }
+          ]
+        }
+      ],
+      "events": [],
+      "commentary": []
+    },
+    {
+      "id": "m6",
+      "sport": "football",
+      "league": "Champions League",
+      "leagueIcon": "⚽",
+      "status": "completed",
+      "startTime": "2026-04-11T20:00:00Z",
+      "homeTeam": {
+        "name": "Bayern Munich",
+        "shortName": "BAY",
+        "logo": "/team-logos/bayern.png",
+        "color": "#DC052D",
+        "score": "3",
+        "scoreDetail": null
+      },
+      "awayTeam": {
+        "name": "Manchester City",
+        "shortName": "MCI",
+        "logo": "/team-logos/mancity.png",
+        "color": "#6CABDD",
+        "score": "2",
+        "scoreDetail": null
+      },
+      "venue": "Allianz Arena, Munich",
+      "result": "Bayern Munich won 3-2",
+      "odds": {
+        "home": 2.1,
+        "draw": 3.4,
+        "away": 3.2
+      },
+      "markets": [],
+      "events": [],
+      "commentary": []
+    },
+    {
+      "id": "m7",
+      "sport": "tennis",
+      "league": "ATP Masters - Monte Carlo",
+      "leagueIcon": "🎾",
+      "status": "live",
+      "startTime": "2026-04-13T11:00:00Z",
+      "homeTeam": {
+        "name": "Carlos Alcaraz",
+        "shortName": "ALC",
+        "logo": "/team-logos/alcaraz.png",
+        "color": "#FF6B35",
+        "score": "6-4, 3-2",
+        "scoreDetail": "Set 2, Serving"
+      },
+      "awayTeam": {
+        "name": "Jannik Sinner",
+        "shortName": "SIN",
+        "logo": "/team-logos/sinner.png",
+        "color": "#1E88E5",
+        "score": "4-6, 2-3",
+        "scoreDetail": "Set 2"
+      },
+      "venue": "Monte Carlo Country Club",
+      "odds": {
+        "home": 1.75,
+        "draw": null,
+        "away": 2.15
+      },
+      "markets": [
+        {
+          "id": "mk13",
+          "name": "Match Winner",
+          "options": [
+            {
+              "label": "Alcaraz",
+              "odds": 1.75
+            },
+            {
+              "label": "Sinner",
+              "odds": 2.15
+            }
+          ]
+        },
+        {
+          "id": "mk14",
+          "name": "Total Sets",
+          "options": [
+            {
+              "label": "2 Sets",
+              "odds": 2.4
+            },
+            {
+              "label": "3 Sets",
+              "odds": 1.6
+            }
+          ]
+        },
+        {
+          "id": "mk15",
+          "name": "Set 2 Winner",
+          "options": [
+            {
+              "label": "Alcaraz",
+              "odds": 1.65
+            },
+            {
+              "label": "Sinner",
+              "odds": 2.25
+            }
+          ]
+        }
+      ],
+      "sets": [
+        {
+          "set": 1,
+          "home": 6,
+          "away": 4
+        },
+        {
+          "set": 2,
+          "home": 3,
+          "away": 2
+        }
+      ],
+      "commentary": []
+    },
+    {
+      "id": "m8",
+      "sport": "tennis",
+      "league": "WTA 1000 - Stuttgart",
+      "leagueIcon": "🎾",
+      "status": "upcoming",
+      "startTime": "2026-04-14T15:00:00Z",
+      "homeTeam": {
+        "name": "Iga Świątek",
+        "shortName": "SWI",
+        "logo": "/team-logos/swiatek.png",
+        "color": "#E91E63",
+        "score": null,
+        "scoreDetail": null
+      },
+      "awayTeam": {
+        "name": "Coco Gauff",
+        "shortName": "GAU",
+        "logo": "/team-logos/gauff.png",
+        "color": "#4CAF50",
+        "score": null,
+        "scoreDetail": null
+      },
+      "venue": "Porsche Arena, Stuttgart",
+      "odds": {
+        "home": 1.55,
+        "draw": null,
+        "away": 2.5
+      },
+      "markets": [
+        {
+          "id": "mk16",
+          "name": "Match Winner",
+          "options": [
+            {
+              "label": "Świątek",
+              "odds": 1.55
+            },
+            {
+              "label": "Gauff",
+              "odds": 2.5
+            }
+          ]
+        },
+        {
+          "id": "mk17",
+          "name": "Total Games Over/Under 19.5",
+          "options": [
+            {
+              "label": "Over 19.5",
+              "odds": 1.85
+            },
+            {
+              "label": "Under 19.5",
+              "odds": 1.95
+            }
+          ]
+        }
+      ],
+      "sets": [],
+      "commentary": []
+    },
+    {
+      "id": "m9",
+      "sport": "cricket",
+      "league": "IPL 2026",
+      "leagueIcon": "🏏",
+      "status": "upcoming",
+      "startTime": "2026-04-15T14:00:00Z",
+      "homeTeam": {
+        "name": "Gujarat Titans",
+        "shortName": "GT",
+        "logo": "/team-logos/gt.png",
+        "color": "#1C1C2E",
+        "score": null,
+        "scoreDetail": null
+      },
+      "awayTeam": {
+        "name": "Punjab Kings",
+        "shortName": "PBKS",
+        "logo": "/team-logos/pbks.png",
+        "color": "#ED1B24",
+        "score": null,
+        "scoreDetail": null
+      },
+      "venue": "Narendra Modi Stadium, Ahmedabad",
+      "odds": {
+        "home": 1.7,
+        "draw": null,
+        "away": 2.25
+      },
+      "markets": [
+        {
+          "id": "mk18",
+          "name": "Match Winner",
+          "options": [
+            {
+              "label": "Gujarat Titans",
+              "odds": 1.7
+            },
+            {
+              "label": "Punjab Kings",
+              "odds": 2.25
+            }
+          ]
+        }
+      ],
+      "commentary": []
+    },
+    {
+      "id": "m10",
+      "sport": "football",
+      "league": "Premier League",
+      "leagueIcon": "⚽",
+      "status": "upcoming",
+      "startTime": "2026-04-15T20:00:00Z",
+      "homeTeam": {
+        "name": "Manchester United",
+        "shortName": "MUN",
+        "logo": "/team-logos/manutd.png",
+        "color": "#DA291C",
+        "score": null,
+        "scoreDetail": null
+      },
+      "awayTeam": {
+        "name": "Chelsea",
+        "shortName": "CHE",
+        "logo": "/team-logos/chelsea.png",
+        "color": "#034694",
+        "score": null,
+        "scoreDetail": null
+      },
+      "venue": "Old Trafford, Manchester",
+      "odds": {
+        "home": 2.5,
+        "draw": 3.2,
+        "away": 2.8
+      },
+      "markets": [
+        {
+          "id": "mk19",
+          "name": "Match Result (1X2)",
+          "options": [
+            {
+              "label": "Man United",
+              "odds": 2.5
+            },
+            {
+              "label": "Draw",
+              "odds": 3.2
+            },
+            {
+              "label": "Chelsea",
+              "odds": 2.8
+            }
+          ]
+        },
+        {
+          "id": "mk20",
+          "name": "Over/Under 2.5 Goals",
+          "options": [
+            {
+              "label": "Over 2.5",
+              "odds": 1.85
+            },
+            {
+              "label": "Under 2.5",
+              "odds": 1.95
+            }
+          ]
+        }
+      ],
+      "events": [],
+      "commentary": []
+    }
+  ],
+  "bets": [
+    {
+      "id": "b1",
+      "userId": "u1",
+      "matchId": "m3",
+      "sport": "cricket",
+      "matchTitle": "DC vs RR",
+      "league": "IPL 2026",
+      "marketName": "Match Winner",
+      "selection": "Rajasthan Royals",
+      "odds": 1.9,
+      "stake": 500,
+      "potentialPayout": 950,
+      "status": "won",
+      "profit": 450,
+      "createdAt": "2026-04-12T13:45:00Z",
+      "settledAt": "2026-04-12T18:00:00Z"
+    },
+    {
+      "id": "b2",
+      "userId": "u1",
+      "matchId": "m6",
+      "sport": "football",
+      "matchTitle": "Bayern vs Man City",
+      "league": "Champions League",
+      "marketName": "Match Result",
+      "selection": "Bayern Munich",
+      "odds": 2.1,
+      "stake": 300,
+      "potentialPayout": 630,
+      "status": "won",
+      "profit": 330,
+      "createdAt": "2026-04-11T19:30:00Z",
+      "settledAt": "2026-04-11T22:00:00Z"
+    },
+    {
+      "id": "b3",
+      "userId": "u1",
+      "matchId": "m1",
+      "sport": "cricket",
+      "matchTitle": "MI vs CSK",
+      "league": "IPL 2026",
+      "marketName": "Match Winner",
+      "selection": "Mumbai Indians",
+      "odds": 1.85,
+      "stake": 1000,
+      "potentialPayout": 1850,
+      "status": "pending",
+      "profit": null,
+      "createdAt": "2026-04-13T13:50:00Z",
+      "settledAt": null
+    },
+    {
+      "id": "b4",
+      "userId": "u2",
+      "matchId": "m4",
+      "sport": "football",
+      "matchTitle": "Arsenal vs Liverpool",
+      "league": "Premier League",
+      "marketName": "Over/Under 2.5",
+      "selection": "Over 2.5",
+      "odds": 1.4,
+      "stake": 2000,
+      "potentialPayout": 2800,
+      "status": "pending",
+      "profit": null,
+      "createdAt": "2026-04-13T16:55:00Z",
+      "settledAt": null
+    },
+    {
+      "id": "b5",
+      "userId": "u1",
+      "matchId": "m6",
+      "sport": "football",
+      "matchTitle": "Bayern vs Man City",
+      "league": "Champions League",
+      "marketName": "Over/Under 2.5",
+      "selection": "Under 2.5",
+      "odds": 2.9,
+      "stake": 200,
+      "potentialPayout": 580,
+      "status": "lost",
+      "profit": -200,
+      "createdAt": "2026-04-11T19:30:00Z",
+      "settledAt": "2026-04-11T22:00:00Z"
+    },
+    {
+      "id": "GyclpQ_q3N4",
+      "userId": "u1",
+      "matchId": "m1",
+      "sport": "cricket",
+      "matchTitle": "MI vs CSK",
+      "league": "IPL 2026",
+      "marketName": "Match Winner",
+      "selection": "Mumbai Indians",
+      "odds": 1.83,
+      "stake": 100,
+      "potentialPayout": 183,
+      "status": "pending",
+      "profit": null,
+      "createdAt": "2026-04-13T09:52:29.247Z",
+      "settledAt": null
+    }
+  ],
+  "transactions": [
+    {
+      "id": "t1",
+      "userId": "u1",
+      "type": "signup_bonus",
+      "amount": 10000,
+      "balanceAfter": 10000,
+      "description": "Welcome bonus",
+      "createdAt": "2026-03-01T10:00:00Z"
+    },
+    {
+      "id": "t2",
+      "userId": "u1",
+      "type": "bet_placed",
+      "amount": -500,
+      "balanceAfter": 9500,
+      "betId": "b1",
+      "description": "Bet on RR vs DC — RR to win",
+      "createdAt": "2026-04-12T13:45:00Z"
+    },
+    {
+      "id": "t3",
+      "userId": "u1",
+      "type": "bet_won",
+      "amount": 950,
+      "balanceAfter": 10450,
+      "betId": "b1",
+      "description": "Won: RR beat DC",
+      "createdAt": "2026-04-12T18:00:00Z"
+    },
+    {
+      "id": "t4",
+      "userId": "u1",
+      "type": "daily_bonus",
+      "amount": 500,
+      "balanceAfter": 10950,
+      "description": "Daily bonus claimed",
+      "createdAt": "2026-04-12T08:00:00Z"
+    },
+    {
+      "id": "t5",
+      "userId": "u1",
+      "type": "bet_placed",
+      "amount": -1000,
+      "balanceAfter": 9950,
+      "betId": "b3",
+      "description": "Bet on MI vs CSK — MI to win",
+      "createdAt": "2026-04-13T13:50:00Z"
+    },
+    {
+      "id": "EuIPkNgjWzI",
+      "userId": "u1",
+      "type": "bet_placed",
+      "amount": -100,
+      "balanceAfter": 9900,
+      "betId": "b_mnx0klz3_ut0m3g",
+      "description": "Bet on MI vs CSK — Mumbai Indians",
+      "createdAt": "2026-04-13T09:52:29.247Z"
+    },
+    {
+      "id": "5HTe5lyrgak",
+      "userId": "691a07aa-9841-4f25-b693-6c5f194a342e",
+      "type": "signup_bonus",
+      "amount": 10000,
+      "balanceAfter": 10000,
+      "description": "Welcome bonus",
+      "createdAt": "2026-04-13T10:30:16.550Z"
+    },
+    {
+      "id": "y76tTZJhMgA",
+      "userId": "691a07aa-9841-4f25-b693-6c5f194a342e",
+      "type": "signup_bonus",
+      "amount": 10000,
+      "balanceAfter": 10000,
+      "description": "Welcome bonus",
+      "createdAt": "2026-04-13T10:39:16.209Z"
+    },
+    {
+      "id": "Oqv9OyAqtK0",
+      "userId": "691a07aa-9841-4f25-b693-6c5f194a342e",
+      "type": "signup_bonus",
+      "amount": 10000,
+      "balanceAfter": 10000,
+      "description": "Welcome bonus",
+      "createdAt": "2026-04-13T12:22:16.474Z"
+    }
+  ],
+  "leaderboard": [
+    {
+      "id": "lb1",
+      "userId": "u4",
+      "rank": 1,
+      "name": "Priya Singh",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=priya",
+      "profit": 12400,
+      "winRate": 65.2,
+      "totalBets": 89
+    },
+    {
+      "id": "lb2",
+      "userId": "u2",
+      "rank": 2,
+      "name": "Lakshay Verma",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=lakshay",
+      "profit": 8200,
+      "winRate": 66.1,
+      "totalBets": 62
+    },
+    {
+      "id": "lb3",
+      "userId": "u1",
+      "rank": 3,
+      "name": "Mridul Sharma",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=mridul",
+      "profit": 4250,
+      "winRate": 59.6,
+      "totalBets": 47
+    },
+    {
+      "id": "lb4",
+      "userId": "u5",
+      "rank": 4,
+      "name": "Rahul Kumar",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=rahul",
+      "profit": 1800,
+      "winRate": 54.5,
+      "totalBets": 55
+    },
+    {
+      "id": "lb5",
+      "userId": "u3",
+      "rank": 5,
+      "name": "Aryan Patel",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=aryan",
+      "profit": -2800,
+      "winRate": 40,
+      "totalBets": 35
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
