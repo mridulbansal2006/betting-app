@@ -976,6 +976,15 @@
       "balanceAfter": 10000,
       "description": "Welcome bonus",
       "createdAt": "2026-04-13T12:22:16.474Z"
+    },
+    {
+      "id": "35s6EIDttAY",
+      "userId": "e96428c6-db0f-4c87-976f-cf987eebbb63",
+      "type": "signup_bonus",
+      "amount": 10000,
+      "balanceAfter": 10000,
+      "description": "Welcome bonus",
+      "createdAt": "2026-04-13T20:08:35.479Z"
     }
   ],
   "leaderboard": [
