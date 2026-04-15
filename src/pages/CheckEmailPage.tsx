@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import { MailCheck } from 'lucide-react';
 import { Link, useSearchParams } from 'react-router-dom';
+import { Icon } from '../components/ui/Icon';
 
 export const CheckEmailPage = () => {
   const [searchParams] = useSearchParams();
@@ -14,7 +14,7 @@ export const CheckEmailPage = () => {
     >
       <div className="w-full max-w-xl rounded-[32px] border border-stake-border bg-stake-card p-8">
         <div className="flex h-16 w-16 items-center justify-center rounded-3xl bg-stake-blue/10">
-          <MailCheck className="h-8 w-8 text-stake-blue" />
+          <Icon name="mark_email_read" className="h-8 w-8 text-stake-blue" fill={true} />
         </div>
         <h1 className="mt-6 text-3xl font-semibold text-stake-textPrimary">Check your email</h1>
         <p className="mt-3 text-sm leading-6 text-stake-textSecondary">

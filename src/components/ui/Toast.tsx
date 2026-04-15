@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { CheckCircle2, CircleAlert } from 'lucide-react';
+import { Icon } from './Icon';
 import { useEffect, useState } from 'react';
 import { cn } from '../../lib/utils';
 
@@ -52,9 +52,9 @@ export const ToastViewport = () => {
           >
             <div className="flex items-start gap-3">
               {toast.tone === 'success' ? (
-                <CheckCircle2 className="mt-0.5 h-5 w-5 text-stake-green" />
+                <Icon name="check_circle" className="mt-0.5 h-6 w-6 text-stake-green" fill={true} />
               ) : (
-                <CircleAlert className="mt-0.5 h-5 w-5 text-stake-red" />
+                <Icon name="error" className="mt-0.5 h-6 w-6 text-stake-red" fill={true} />
               )}
               <div>
                 <p className="font-semibold text-stake-textPrimary">{toast.title}</p>

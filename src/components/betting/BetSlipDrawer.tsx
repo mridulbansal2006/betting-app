@@ -1,8 +1,8 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { ScrollText } from 'lucide-react';
 import { useBetSlip } from '../../contexts/BetSlipContext';
-import { EmptyState } from '../ui/EmptyState';
 import { Badge } from '../ui/Badge';
+import { EmptyState } from '../ui/EmptyState';
+import { Icon } from '../ui/Icon';
 import { BetSelectionCard } from './BetSelectionCard';
 import { PlaceBetButton } from './PlaceBetButton';
 
@@ -17,7 +17,7 @@ export const BetSlipDrawer = ({ desktop = false }: { desktop?: boolean }) => {
           onClick={toggleSlip}
           className="fixed bottom-20 right-4 z-40 inline-flex items-center gap-2 rounded-full bg-stake-green px-4 py-3 text-sm font-semibold text-black shadow-xl lg:hidden"
         >
-          <ScrollText className="h-4 w-4" />
+          <Icon name="receipt_long" className="h-5 w-5" />
           Slip ({selections.length})
         </button>
       ) : null}

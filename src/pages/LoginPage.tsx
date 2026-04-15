@@ -58,63 +58,92 @@ export const LoginPage = () => {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 12 }}
-      animate={{ opacity: 1, y: 0 }}
-      className="flex min-h-screen items-center justify-center bg-stake-bg p-4"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className="relative flex min-h-screen items-center justify-center overflow-hidden bg-stake-bg p-4"
     >
-      <form onSubmit={handleSubmit} className="w-full max-w-md rounded-[32px] border border-stake-border bg-stake-card p-8">
-        <h1 className="text-3xl font-semibold text-stake-textPrimary">Login</h1>
-        <p className="mt-3 text-sm text-stake-textSecondary">
-          Sign in with your Supabase-backed StakeZone account.
-        </p>
+      {/* Background Glows */}
+      <div className="absolute left-[-10%] top-[-10%] h-[40%] w-[40%] rounded-full bg-stake-green/5 blur-[120px]" />
+      <div className="absolute right-[-10%] bottom-[-10%] h-[40%] w-[40%] rounded-full bg-stake-blue/5 blur-[120px]" />
+
+      <form onSubmit={handleSubmit} className="glass relative w-full max-w-md rounded-[32px] p-10 shadow-2xl">
+        <div className="mb-8">
+          <Link to="/" className="text-[10px] font-bold uppercase tracking-[0.3em] text-stake-green hover:underline">
+            ← Back to Home
+          </Link>
+          <h1 className="mt-4 text-4xl font-bold tracking-tight text-stake-textPrimary">Welcome back</h1>
+          <p className="mt-2 text-stake-textSecondary">
+            Sign in to your StakeZone account.
+          </p>
+        </div>
+
         {checkEmail ? (
-          <div className="mt-5 rounded-2xl border border-stake-blue/30 bg-stake-blue/10 p-4 text-sm text-stake-textSecondary">
-            <p className="font-semibold text-stake-textPrimary">Verify your email first</p>
-            <p className="mt-2">
-              A confirmation link was sent to <span className="text-stake-textPrimary">{checkEmail}</span>.
-              Open that email, verify the account, then come back and sign in.
+          <div className="mb-6 rounded-2xl border border-stake-blue/20 bg-stake-blue/5 p-4 text-sm leading-relaxed text-stake-textSecondary">
+            <p className="font-bold text-stake-blue">Verification Required</p>
+            <p className="mt-1">
+              Check <span className="text-stake-textPrimary">{checkEmail}</span> for a confirmation link.
             </p>
           </div>
         ) : null}
-        <div className="mt-6 space-y-5">
-          <div>
-            <label className="mb-2 block text-sm font-medium text-stake-textSecondary">Email address</label>
+
+        <div className="space-y-6">
+          <div className="space-y-2">
+            <label className="text-xs font-bold uppercase tracking-widest text-stake-textMuted">Email Address</label>
             <input
               type="email"
               required
               value={form.email}
               onChange={(event) => setForm((current) => ({ ...current, email: event.target.value }))}
-              className="w-full rounded-2xl border border-stake-border bg-stake-input px-4 py-3 text-stake-textPrimary outline-none"
-              placeholder="mridul@stakezone.com"
+              className="w-full rounded-2xl border border-stake-border bg-stake-bg/50 px-5 py-4 text-stake-textPrimary outline-none transition-all focus:neon-border-green focus:bg-stake-bg/80"
+              placeholder="e.g., alex@stakezone.com"
             />
           </div>
-          <div>
-            <label className="mb-2 block text-sm font-medium text-stake-textSecondary">Password</label>
+          <div className="space-y-2">
+            <div className="flex items-center justify-between">
+              <label className="text-xs font-bold uppercase tracking-widest text-stake-textMuted">Password</label>
+            </div>
             <input
               type="password"
               required
               minLength={6}
               value={form.password}
               onChange={(event) => setForm((current) => ({ ...current, password: event.target.value }))}
-              className="w-full rounded-2xl border border-stake-border bg-stake-input px-4 py-3 text-stake-textPrimary outline-none"
-              placeholder="Enter your password"
+              className="w-full rounded-2xl border border-stake-border bg-stake-bg/50 px-5 py-4 text-stake-textPrimary outline-none transition-all focus:neon-border-green focus:bg-stake-bg/80"
+              placeholder="••••••••"
             />
           </div>
         </div>
-        {error ? <p className="mt-4 text-sm text-stake-red">{error}</p> : null}
+
+        {error ? (
+          <motion.p
+            initial={{ opacity: 0, x: -10 }}
+            animate={{ opacity: 1, x: 0 }}
+            className="mt-6 text-sm font-medium text-stake-red"
+          >
+            {error}
+          </motion.p>
+        ) : null}
+
         <button
           disabled={isLoading}
-          className="mt-6 w-full rounded-2xl bg-stake-green px-4 py-3 font-semibold text-black disabled:opacity-70"
+          className="group relative mt-8 flex w-full items-center justify-center overflow-hidden rounded-2xl bg-stake-green py-4 font-bold text-black transition-all hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50"
         >
-          {isLoading ? 'Signing in...' : 'Sign In'}
+          <div className="absolute inset-0 bg-white/20 opacity-0 transition-opacity group-hover:opacity-100" />
+          {isLoading ? (
+            <div className="h-5 w-5 animate-spin rounded-full border-2 border-black/30 border-t-black" />
+          ) : (
+            'Sign In to Dashboard'
+          )}
         </button>
-        <p className="mt-4 text-sm text-stake-textSecondary">
-          No account yet?{' '}
-          <Link to="/register" className="text-stake-blue">
-            Create one
+
+        <p className="mt-8 text-center text-sm font-medium text-stake-textSecondary">
+          New to StakeZone?{' '}
+          <Link to="/register" className="font-bold text-stake-blue hover:text-stake-blue/80">
+            Create an Account
           </Link>
         </p>
       </form>
     </motion.div>
+
   );
 };

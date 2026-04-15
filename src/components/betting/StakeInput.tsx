@@ -1,4 +1,4 @@
-import { Coins } from 'lucide-react';
+import { Icon } from '../ui/Icon';
 
 interface StakeInputProps {
   value: number;
@@ -7,7 +7,7 @@ interface StakeInputProps {
 
 export const StakeInput = ({ value, onChange }: StakeInputProps) => (
   <label className="flex items-center gap-3 rounded-2xl border border-stake-border bg-stake-input px-3 py-2">
-    <Coins className="h-4 w-4 text-stake-textMuted" />
+    <Icon name="database" className="h-5 w-5 text-stake-textMuted" fill={true} />
     <input
       type="number"
       min={10}

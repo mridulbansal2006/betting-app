@@ -1,8 +1,10 @@
 import { motion } from 'framer-motion';
-import { Clock3 } from 'lucide-react';
+import { useLayoutEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
+import gsap from 'gsap';
 import { getStatusLabel, statusTone } from '../../lib/utils';
 import { Badge } from '../ui/Badge';
+import { Icon } from '../ui/Icon';
 import { LiveScore } from './LiveScore';
 import { OddsButton } from './OddsButton';
 import type { Match } from '../../types';
@@ -22,7 +24,8 @@ export const MatchCard = ({ match, index = 0, compact = false }: MatchCardProps)
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: index * 0.05 }}
-      className="cursor-pointer rounded-[28px] border border-stake-border bg-stake-card p-5 transition hover:border-stake-green/50 hover:bg-stake-hover"
+      whileHover={{ scale: 1.02, y: -4 }}
+      className="glass group cursor-pointer overflow-hidden rounded-[32px] p-6 transition-all hover:glass-hover hover:neon-border-green"
       onClick={() => navigate(`/match/${match.id}`)}
     >
       <div className="flex items-center justify-between gap-3">
@@ -33,7 +36,9 @@ export const MatchCard = ({ match, index = 0, compact = false }: MatchCardProps)
           className={statusTone[match.status]}
           tone={match.status === 'live' ? 'danger' : match.status === 'upcoming' ? 'warning' : 'neutral'}
         >
-          {match.status === 'upcoming' ? <Clock3 className="h-3.5 w-3.5" /> : null}
+          {match.status === 'upcoming' ? (
+            <Icon name="schedule" className="h-4 w-4" weight={700} />
+          ) : null}
           {getStatusLabel(match)}
         </Badge>
       </div>
@@ -43,7 +48,7 @@ export const MatchCard = ({ match, index = 0, compact = false }: MatchCardProps)
       </div>
 
       {match.status === 'completed' && match.result ? (
-        <p className="mt-4 rounded-2xl bg-stake-bg/60 px-4 py-3 text-sm text-stake-textSecondary">
+        <p className="mt-4 rounded-[20px] bg-white/5 px-4 py-3 text-sm font-bold text-stake-textSecondary">
           {match.result}
         </p>
       ) : null}

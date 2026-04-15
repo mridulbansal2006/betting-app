@@ -1,4 +1,3 @@
-import { Trophy, BadgeIndianRupee, CircleUserRound, LayoutDashboard, ListOrdered, Shield, Volleyball } from 'lucide-react';
 import type { Sport } from '../types';
 
 export const SPORT_CONFIG: Record<
@@ -26,14 +25,14 @@ export const SPORT_CONFIG: Record<
 };
 
 export const NAV_ITEMS = [
-  { to: '/dashboard', label: 'Home', icon: LayoutDashboard },
-  { to: '/sports/cricket', label: 'Cricket', icon: Shield },
-  { to: '/sports/football', label: 'Football', icon: Volleyball },
-  { to: '/sports/tennis', label: 'Tennis', icon: Trophy },
-  { to: '/my-bets', label: 'My Bets', icon: ListOrdered },
-  { to: '/leaderboard', label: 'Leaderboard', icon: Trophy },
-  { to: '/wallet', label: 'Wallet', icon: BadgeIndianRupee },
-  { to: '/profile', label: 'Profile', icon: CircleUserRound },
+  { to: '/dashboard', label: 'Home', icon: 'dashboard' },
+  { to: '/sports/cricket', label: 'Cricket', icon: 'shield' },
+  { to: '/sports/football', label: 'Football', icon: 'sports_volleyball' },
+  { to: '/sports/tennis', label: 'Tennis', icon: 'emoji_events' },
+  { to: '/my-bets', label: 'My Bets', icon: 'format_list_bulleted' },
+  { to: '/leaderboard', label: 'Leaderboard', icon: 'leaderboard' },
+  { to: '/wallet', label: 'Wallet', icon: 'account_balance_wallet' },
+  { to: '/profile', label: 'Profile', icon: 'person' },
 ];
 
 export const DISCLAIMER =

@@ -1,4 +1,4 @@
-import { X } from 'lucide-react';
+import { Icon } from '../ui/Icon';
 import { useBetSlip } from '../../contexts/BetSlipContext';
 import { formatBalance, formatOdds } from '../../lib/utils';
 import { StakeInput } from './StakeInput';
@@ -19,7 +19,7 @@ export const BetSelectionCard = ({ selection }: { selection: BetSelection }) => 
           onClick={() => removeSelection(selection.matchId, selection.marketName)}
           className="rounded-full p-1 text-stake-textMuted transition hover:bg-stake-hover hover:text-stake-textPrimary"
         >
-          <X className="h-4 w-4" />
+          <Icon name="close" className="h-4 w-4" />
         </button>
       </div>
       <div className="mt-4 grid gap-3">

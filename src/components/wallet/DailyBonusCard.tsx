@@ -1,4 +1,4 @@
-import { Gift } from 'lucide-react';
+import { Icon } from '../ui/Icon';
 import { useCountdown } from '../../hooks/useCountdown';
 import { useWallet } from '../../contexts/WalletContext';
 import { showToast } from '../ui/Toast';
@@ -11,7 +11,7 @@ export const DailyBonusCard = () => {
     <div className="rounded-3xl border border-stake-border bg-stake-card p-6">
       <div className="flex items-center gap-3">
         <div className="rounded-2xl bg-stake-purple/15 p-3">
-          <Gift className="h-5 w-5 text-stake-purple" />
+          <Icon name="card_giftcard" className="h-5 w-5 text-stake-purple" fill={true} />
         </div>
         <div>
           <h3 className="font-semibold text-stake-textPrimary">Daily bonus</h3>

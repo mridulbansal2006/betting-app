@@ -9,6 +9,8 @@ import { ThemeProvider } from './contexts/ThemeContext';
 import { ToastViewport } from './components/ui/Toast';
 import { ErrorBoundary } from './components/ui/ErrorBoundary';
 
+import { ScrollProvider } from './components/layout/ScrollProvider';
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <ErrorBoundary>
@@ -16,8 +18,10 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <WalletProvider>
           <BetSlipProvider>
             <ThemeProvider>
-              <App />
-              <ToastViewport />
+              <ScrollProvider>
+                <App />
+                <ToastViewport />
+              </ScrollProvider>
             </ThemeProvider>
           </BetSlipProvider>
         </WalletProvider>
