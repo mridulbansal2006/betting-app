@@ -22,6 +22,12 @@ export const SPORT_CONFIG: Record<
     accent: 'from-stake-yellow/20 to-stake-yellow/5',
     description: 'ATP and WTA match winner, set winner, and totals.',
   },
+  f1: {
+    label: 'Formula 1',
+    icon: '🏎️',
+    accent: 'from-stake-red/20 to-stake-red/5',
+    description: 'Grand Prix winners, podium finishes, and fastest lap markets.',
+  },
 };
 
 export const NAV_ITEMS = [
@@ -29,6 +35,7 @@ export const NAV_ITEMS = [
   { to: '/sports/cricket', label: 'Cricket', icon: 'shield' },
   { to: '/sports/football', label: 'Football', icon: 'sports_volleyball' },
   { to: '/sports/tennis', label: 'Tennis', icon: 'emoji_events' },
+  { to: '/sports/f1', label: 'Formula 1', icon: 'speed' },
   { to: '/my-bets', label: 'My Bets', icon: 'format_list_bulleted' },
   { to: '/leaderboard', label: 'Leaderboard', icon: 'leaderboard' },
   { to: '/wallet', label: 'Wallet', icon: 'account_balance_wallet' },

@@ -1,4 +1,4 @@
-export type Sport = 'cricket' | 'football' | 'tennis';
+export type Sport = 'cricket' | 'football' | 'tennis' | 'f1';
 export type MatchStatus = 'live' | 'upcoming' | 'completed';
 export type BetStatus = 'pending' | 'won' | 'lost';
 export type TransactionType = 'signup_bonus' | 'daily_bonus' | 'bet_placed' | 'bet_won' | 'bet_lost';

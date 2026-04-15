@@ -785,6 +785,122 @@
       ],
       "events": [],
       "commentary": []
+    },
+    {
+      "id": "m11",
+      "sport": "f1",
+      "league": "Bahrain Grand Prix",
+      "leagueIcon": "🏎️",
+      "status": "live",
+      "startTime": "2026-04-13T15:00:00Z",
+      "homeTeam": {
+        "name": "Max Verstappen",
+        "shortName": "VER",
+        "logo": "/team-logos/verstappen.png",
+        "color": "#0600EF",
+        "score": "P1",
+        "scoreDetail": "Lap 42/57"
+      },
+      "awayTeam": {
+        "name": "Sergio Perez",
+        "shortName": "PER",
+        "logo": "/team-logos/perez.png",
+        "color": "#0600EF",
+        "score": "P2",
+        "scoreDetail": "+8.4s"
+      },
+      "venue": "Bahrain International Circuit",
+      "odds": {
+        "home": 1.25,
+        "draw": null,
+        "away": 4.5
+      },
+      "markets": [
+        {
+          "id": "mk21",
+          "name": "Race Winner",
+          "options": [
+            {
+              "label": "Max Verstappen",
+              "odds": 1.25
+            },
+            {
+              "label": "Sergio Perez",
+              "odds": 4.5
+            },
+            {
+              "label": "Charles Leclerc",
+              "odds": 12
+            }
+          ]
+        },
+        {
+          "id": "mk22",
+          "name": "Fastest Lap",
+          "options": [
+            {
+              "label": "Max Verstappen",
+              "odds": 1.8
+            },
+            {
+              "label": "Lewis Hamilton",
+              "odds": 6.5
+            }
+          ]
+        }
+      ],
+      "commentary": []
+    },
+    {
+      "id": "m12",
+      "sport": "f1",
+      "league": "Saudi Arabian GP",
+      "leagueIcon": "🏎️",
+      "status": "upcoming",
+      "startTime": "2026-04-20T17:00:00Z",
+      "homeTeam": {
+        "name": "Fernando Alonso",
+        "shortName": "ALO",
+        "logo": "/team-logos/alonso.png",
+        "color": "#006F62",
+        "score": null,
+        "scoreDetail": null
+      },
+      "awayTeam": {
+        "name": "Lando Norris",
+        "shortName": "NOR",
+        "logo": "/team-logos/norris.png",
+        "color": "#FF8700",
+        "score": null,
+        "scoreDetail": null
+      },
+      "venue": "Jeddah Corniche Circuit",
+      "odds": {
+        "home": 3.4,
+        "draw": null,
+        "away": 2.8
+      },
+      "markets": [
+        {
+          "id": "mk23",
+          "name": "Podium Finish",
+          "options": [
+            {
+              "label": "Alonso",
+              "odds": 1.8
+            },
+            {
+              "label": "Norris",
+              "odds": 1.65
+            },
+            {
+              "label": "Russell",
+              "odds": 2.2
+            }
+          ]
+        }
+      ],
+      "commentary": []
     }
   ],
   "bets": [
@@ -985,6 +1101,15 @@
       "balanceAfter": 10000,
       "description": "Welcome bonus",
       "createdAt": "2026-04-13T20:08:35.479Z"
+    },
+    {
+      "id": "F4gG2tiFM28",
+      "userId": "e96428c6-db0f-4c87-976f-cf987eebbb63",
+      "type": "daily_bonus",
+      "amount": 500,
+      "balanceAfter": 10500,
+      "description": "Daily bonus claimed",
+      "createdAt": "2026-04-15T11:54:17.911Z"
     }
   ],
   "leaderboard": [
@@ -1038,6 +1163,5 @@
       "winRate": 40,
       "totalBets": 35
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
 }
