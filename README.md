@@ -78,3 +78,7 @@ db.json
 - `db.json` acts as the mock backend for sports, bets, leaderboard, and transactions.
 - Supabase stores authentication and user profile metadata in the cloud.
 # betting-app
+
+## Update by Jaini
+- Verified project setup locally
+- No code changes made, only documentation update
